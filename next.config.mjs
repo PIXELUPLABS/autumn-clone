@@ -8,7 +8,7 @@ const nextConfig = {
   images: {
     // Serve AVIF to supporting browsers (better compression than WebP),
     // falling back to WebP. Next.js negotiates via Accept header automatically.
-    formats: ["image/avif", "image/webp"],
+   // formats: ["image/avif", "image/webp"],
   },
   async headers() {
     return [
