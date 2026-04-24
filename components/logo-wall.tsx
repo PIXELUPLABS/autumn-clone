@@ -21,11 +21,11 @@ export default function LogoWall() {
 				{/* Left heading — 42% on desktop, full width on mobile */}
 				<div className="md:w-[42%] px-4 xl:px-22.75 py-10 md:py-0 flex items-center border-b md:border-b-0 md:border-r border-[#292929]">
 					<div>
-						<p className="font-sans text-[22px] xl:text-[28px] font-normal leading-[1.15] tracking-[-0.03em]">
+						<p className="font-sans text-[30px] md:text-[36px] xl:text-[40px] font-normal leading-[1.1] tracking-[-0.03em]">
 							<span className="text-[#FFFFFF66]">Trusted by </span>
 							<span className="text-white">AI teams</span>
 						</p>
-						<p className="font-sans text-[22px] xl:text-[28px] font-normal leading-[1.15] tracking-[-0.03em] text-white">
+						<p className="font-sans text-[30px] md:text-[36px] xl:text-[40px] font-normal leading-[1.1] tracking-[-0.03em] text-white">
 							shipping fast
 						</p>
 					</div>
