@@ -18,14 +18,15 @@ export default function LogoWall() {
 	return (
 		<section className="w-full bg-[#000000] border-b border-[#292929]">
 			<div className="flex flex-col md:flex-row">
-				{/* Left heading */}
-				<div className="md:w-[38%] xl:w-[35%] px-4 xl:px-22.75 py-10 xl:py-12 flex items-center border-b md:border-b-0 md:border-r border-[#292929]">
+				{/* Left heading — 42% on desktop, full width on mobile */}
+				<div className="md:w-[42%] px-4 xl:px-22.75 py-10 md:py-0 flex items-center border-b md:border-b-0 md:border-r border-[#292929]">
 					<div>
-						<p className="font-sans text-[22px] xl:text-[28px] font-normal leading-[1.1] tracking-[-0.03em] text-[#FFFFFF66]">
-							Trusted by
+						<p className="font-sans text-[22px] xl:text-[28px] font-normal leading-[1.15] tracking-[-0.03em]">
+							<span className="text-[#FFFFFF66]">Trusted by </span>
+							<span className="text-white">AI teams</span>
 						</p>
-						<p className="font-sans text-[22px] xl:text-[28px] font-normal leading-[1.1] tracking-[-0.03em] text-white">
-							AI teams shipping fast
+						<p className="font-sans text-[22px] xl:text-[28px] font-normal leading-[1.15] tracking-[-0.03em] text-white">
+							shipping fast
 						</p>
 					</div>
 				</div>
@@ -42,7 +43,7 @@ export default function LogoWall() {
 							<div
 								key={logo.id}
 								className={cn(
-									"flex items-center justify-center py-8 xl:py-10 border-[#292929]",
+									"flex items-center justify-center py-10 md:py-0 md:min-h-[166px] border-[#292929]",
 									!isLastMobileCol && "border-r",
 									!isLastMobileRow && "border-b",
 									isLastDesktopCol ? "md:border-r-0" : "md:border-r",
@@ -58,7 +59,7 @@ export default function LogoWall() {
 									<img
 										src={logo.src}
 										alt={logo.name}
-										className="h-6 w-auto max-w-[140px] object-contain"
+										className="h-7 w-auto max-w-[150px] object-contain"
 										loading="lazy"
 									/>
 								)}
