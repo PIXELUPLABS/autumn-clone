@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
-  allowedDevOrigins: ['*.ngrok-free.dev']
+  allowedDevOrigins: ["*.ngrok-free.dev"],
+  experimental: {
+    optimizePackageImports: ["framer-motion", "motion"],
+  },
 };
 
 export default nextConfig;

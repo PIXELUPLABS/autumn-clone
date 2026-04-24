@@ -1332,7 +1332,7 @@ export const ProblemBgSvg = (props: ComponentPropsWithoutRef<"div">) => (
 	>
 		{/* eslint-disable-next-line @next/next/no-img-element */}
 		<img
-			src="/images/problems/problembg.svg"
+			src="/images/problems/problembg.png"
 			alt="Problem Background"
 			className="w-full h-auto"
 		/>

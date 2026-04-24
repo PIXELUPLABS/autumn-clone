@@ -159,7 +159,7 @@ export default function PricingModels() {
 											src={src}
 											alt="Pricing Model"
 											fill
-											sizes="(max-width: 768px) 100vw, 50vw"
+											sizes="(max-width: 1024px) 100vw, (max-width: 1440px) 40vw, 600px"
 											className="object-contain"
 											priority={key === "0"}
 										/>
