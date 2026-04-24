@@ -42,6 +42,12 @@ export default function HomeSections() {
 	return (
 		<>
 			<Hero />
+			<div className="flex flex-col gap-2.5 bg-[#000000]">
+				<div className="border-t border-[#292929] w-full" />
+				<div className="border-t border-[#292929] w-full" />
+				<div className="border-t border-[#292929] w-full" />
+				<div className="border-t border-[#292929] w-full" />
+			</div>
 			<LogoWall />
 			<SectionDivider title="THE PROBLEM" />
 			<Problem />
