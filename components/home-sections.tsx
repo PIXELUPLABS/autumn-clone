@@ -47,6 +47,7 @@ export default function HomeSections() {
 				<div className="border-t border-[#292929] w-full" />
 				<div className="border-t border-[#292929] w-full" />
 				<div className="border-t border-[#292929] w-full" />
+				<div className="border-t border-[#292929] w-full" />
 			</div>
 			<LogoWall />
 			<SectionDivider title="THE PROBLEM" />
