@@ -16,7 +16,7 @@ const NUM_DESKTOP_COLS = 3;
 
 export default function LogoWall() {
 	return (
-		<section className="w-full bg-[#000000] border-b border-[#292929]">
+		<section className="w-full bg-[#000000]">
 			<div className="flex flex-col md:flex-row">
 				{/* Left heading — 42% on desktop, full width on mobile */}
 				<div className="md:w-[42%] px-4 xl:px-22.75 py-10 md:py-0 flex items-center border-b md:border-b-0 md:border-r border-[#292929]">
