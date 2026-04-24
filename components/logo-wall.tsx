@@ -2,44 +2,14 @@
 
 import { cn } from "@/lib/utils";
 
-// Replace each entry's `name` with the real company name and swap
-// `LogoPlaceholder` for an actual SVG import when logos are ready.
 const LOGOS = [
-	{ id: 1, name: "Mintlify" },
-	{ id: 2, name: "Linear" },
-	{ id: 3, name: "Firecrawl" },
-	{ id: 4, name: "Mastra" },
-	{ id: 5, name: "T3.chat" },
-	{ id: 6, name: "Placeholder" },
+	{ id: 1, name: "Mintlify", src: "/images/logos/mintlify_logo.svg.svg" },
+	{ id: 2, name: "Browser Use", src: "/images/logos/Browser use.svg" },
+	{ id: 3, name: "Firecrawl", src: "/images/logos/Firecrawl.svg.svg" },
+	{ id: 4, name: "Mastra", src: "/images/logos/Mastra.svg.svg" },
+	{ id: 5, name: "T3.chat", src: "/images/logos/T3_svg.svg" },
+	{ id: 6, name: "", src: null },
 ];
-
-function LogoPlaceholder({ name }: { name: string }) {
-	return (
-		<div className="flex items-center gap-2.5 text-[#FFFFFF4D]">
-			<svg
-				width="20"
-				height="20"
-				viewBox="0 0 20 20"
-				fill="none"
-				aria-hidden="true"
-				className="shrink-0"
-			>
-				<rect
-					x="2"
-					y="2"
-					width="16"
-					height="16"
-					rx="3.5"
-					fill="currentColor"
-					opacity="0.55"
-				/>
-			</svg>
-			<span className="font-sans text-[14px] md:text-[15px] font-light tracking-[-0.02em]">
-				{name}
-			</span>
-		</div>
-	);
-}
 
 const NUM_MOBILE_COLS = 2;
 const NUM_DESKTOP_COLS = 3;
@@ -84,7 +54,14 @@ export default function LogoWall() {
 									backgroundSize: "14px 14px",
 								}}
 							>
-								<LogoPlaceholder name={logo.name} />
+								{logo.src && (
+									<img
+										src={logo.src}
+										alt={logo.name}
+										className="h-6 w-auto max-w-[140px] object-contain"
+										loading="lazy"
+									/>
+								)}
 							</div>
 						);
 					})}
