@@ -194,9 +194,12 @@ export default function PricingModels() {
 											>
 												<div className="relative w-full aspect-3/2.5 sm:aspect-square">
 													<div className="absolute bottom-0 left-0 right-0 z-10 flex items-center justify-center px-3 pt-2">
-														<img
+														<Image
 															src={images[item.model]}
 															alt="Pricing Model"
+															width={1212}
+															height={1048}
+															sizes="(max-width: 640px) 90vw, (max-width: 768px) 85vw, 400px"
 															className="w-full h-auto max-h-full object-contain object-bottom"
 														/>
 													</div>
