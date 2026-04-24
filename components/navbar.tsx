@@ -289,7 +289,7 @@ export default function Navbar({
 					y: 0,
 					pointerEvents: "auto",
 					clipPath: "inset(0% 0 0% 0)",
-					duration: 0.35,
+					duration: 0.2,
 					ease: "power3.inOut",
 				})
 				.to(
@@ -298,11 +298,11 @@ export default function Navbar({
 						opacity: 1,
 						filter: "blur(0px)",
 						scale: 1,
-						duration: 0.25,
-						stagger: 0.015,
+						duration: 0.15,
+						stagger: 0.01,
 						ease: "power2.out",
 					},
-					"-=0.2",
+					"-=0.1",
 				);
 		},
 		{ scope: containerRef },
