@@ -69,6 +69,17 @@ const images: Record<(typeof sidebarItems)[number]["model"], string> = {
 	7: "/images/pricing-models/Subscriptions (3).webp",
 };
 
+const mobileImages: Record<(typeof sidebarItems)[number]["model"], string> = {
+	0: "/images/pricing-models/Subscriptions-mobile.avif",
+	1: "/images/pricing-models/Subscriptions (1)-mobile.avif",
+	2: "/images/pricing-models/Trial Configuration-mobile.avif",
+	3: "/images/pricing-models/Hybrid Plan Builder-mobile.avif",
+	4: "/images/pricing-models/Usage Metering-mobile.avif",
+	5: "/images/pricing-models/Hybrid Plan Builder (1)-mobile.avif",
+	6: "/images/pricing-models/Subscriptions (2)-mobile.avif",
+	7: "/images/pricing-models/Subscriptions (3)-mobile.avif",
+};
+
 export default function PricingModels() {
 	const [activeTab, setActiveTab] = useState<(typeof sidebarItems)[number]>(
 		sidebarItems[0],
@@ -195,7 +206,7 @@ export default function PricingModels() {
 												<div className="relative w-full aspect-3/2.5 sm:aspect-square">
 													<div className="absolute bottom-0 left-0 right-0 z-10 flex items-center justify-center px-3 pt-2">
 														<Image
-															src={images[item.model]}
+															src={mobileImages[item.model]}
 															alt="Pricing Model"
 															width={1212}
 															height={1048}
