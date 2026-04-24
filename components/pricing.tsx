@@ -86,6 +86,13 @@ export default function Pricing() {
 										index === 1 ? "lg:border-r" : ""
 									} ${index === 2 ? "md:col-span-2 lg:col-span-1 md:w-[calc(50%-16px)] md:justify-self-center lg:w-full lg:justify-self-auto" : ""}`}
 								>
+									<Image
+										src="/images/pricing-models/pricing-modal.avif"
+										alt=""
+										fill
+										className="object-cover object-top pointer-events-none"
+										aria-hidden="true"
+									/>
 									{plan.isPro && (
 										<div className="hidden lg:block absolute -inset-px z-20 pointer-events-none border border-transparent [border-image:linear-gradient(to_bottom,#A175FF,#000000)_1]"></div>
 									)}
