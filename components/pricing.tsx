@@ -52,7 +52,7 @@ export default function Pricing() {
 			>
 				{/* Desktop Background */}
 				<Image
-					src="/images/pricing/pricing.webp"
+					src="/images/pricing/pricing.avif"
 					alt="pricing background desktop"
 					fill
 					className="object-cover absolute z-10 lg:z-50 hidden md:block"
@@ -60,7 +60,7 @@ export default function Pricing() {
 				/>
 				{/* Mobile Background */}
 				<Image
-					src="/images/pricing/pricing-mob.webp"
+					src="/images/pricing/pricing-mob.avif"
 					alt="pricing background mobile"
 					fill
 					className="object-cover absolute z-10 lg:z-50 block md:hidden"
