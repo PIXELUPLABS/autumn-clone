@@ -141,9 +141,6 @@ const Testimonials = () => {
 												loop
 												muted
 												playsInline
-												onCanPlay={(e) => {
-													(e.target as HTMLVideoElement).playbackRate = 0.4;
-												}}
 												className="w-full h-full object-cover"
 											/>
 										</div>
